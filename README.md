@@ -82,7 +82,7 @@ https://github.com/knolleary/pubsubclient <br>
 https://github.com/adafruit/Adafruit_BME280_Library <br>
 
 Al usar Arduino Pro mini, también necesita estos paquetes <br>
-https://github.com/rocketscream/Baja potencia <br>
+https://github.com/rocketscream/Low-Power <br>
 https://github.com/PaulStoffregen/RadioHead <br>
 https://github.com/adafruit/Adafruit_BME280_Library <br>
 
