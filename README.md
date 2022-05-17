@@ -15,7 +15,8 @@ Hay tres versiones disponibles:
 
 El código y los esquemas para cualquier solución se pueden encontrar en las subcarpetas correspondientes de la carpeta 'código'
 
-###Modo de operación
+## Modo de operación
+
 ###ESP8266
 
 La velocidad del viento y la lluvia se detectan mediante la interrupción de cambio de pin de ATTINY.
@@ -27,9 +28,10 @@ Cada pocos minutos, se despierta, recopila datos de otros dispositivos mediante 
 La velocidad del viento y la lluvia se cuentan mediante el coprocesador ULP del módulo ESP32. Cada pocos minutos, ESP32 se despierta del modo de suspensión profunda, lee los valores de conteo de ULP, enciende los dispositivos I2C y envía todo a su corredor MQTT. Luego vuelve a dormir.
 
 ### Arduino Pro Mini
+
 Debido a que los dispositivos ESP consumen bastante energía, quería construir algo más ahorrador de energía. Por lo tanto, se utiliza un Arduino Pro Mini dentro de la estación meteorológica. La mayor parte del tiempo duerme y cuenta el viento y la lluvia por interrupciones. Cada x minutos, se activa, enciende los dispositivos I2C (BME280 y ATTINY24 para la dirección del viento), lee los valores y los envía mediante un módulo económico de 433 MHz. Encontrará un ejemplo de trabajo basado en el módulo ESP8266 que actúa como un puente entre 433 Mhz y MQTT, por lo que recibe datos a través de 433 MHz y los publica como antes de usar MQTT.
 
-###Sitio del proyecto
+### Sitio del proyecto
 
 Encuentra todas las piezas impresas en 3D en Thingiverse
 https://www.thingiverse.com/thing:3718078
